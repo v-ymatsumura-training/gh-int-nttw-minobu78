@@ -1,13 +1,13 @@
 {
   "name": "@githubschool/gh-github-intermediate-template",
   "description": "GitHub Intermediate Training - Template",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "scripts": {
     "bundle": "npm run format:write && npm run package",
     "ci-test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 npx jest",
     "coverage": "npx make-coverage-badge --output-path ./badges/coverage.svg",
     "format:write": "npx prettier --write . --config .prettierrc.yml",
-    "format:check": "npx prettier --check . --config .prettierrc.yml",
+    "format:check": "npx prettier --check . --config .prettiserrc.yml",
     "lint": "npx eslint . -c eslint.config.mjs",
     "package": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "package:watch": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript --watch",
